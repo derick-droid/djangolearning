@@ -1,0 +1,19 @@
+{% if questions_objects %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polls</title>
+</head>
+<body>
+    <h1>
+        Question
+    </h1>
+    <p> {% for one in question_objects %}
+        <li>{{one.question_tex}}:{{one.publish_date}}</li>
+        {% endfor %} </p>
+</body>
+</html>
+{% endif %}
