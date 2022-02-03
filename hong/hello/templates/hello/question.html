@@ -11,9 +11,14 @@
     <h1>
         Question
     </h1>
-    <p> {% for one in question_objects %}
-        <li>{{one.question_tex}}:{{one.publish_date}}</li>
-        {% endfor %} </p>
+    <ul>
+        {% for one in question_objects %}
+        <li>{{one.question_tex}}: Date published : {{one.publish_date}}</li>
+        {% endfor %} 
+
+    </ul>
+        
 </body>
 </html>
 {% endif %}
+
