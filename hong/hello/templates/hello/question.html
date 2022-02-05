@@ -8,16 +8,15 @@
     <title>polls</title>
 </head>
 <body>
-    <h1>
-        Question
-    </h1>
-    <ul>
-        {% for one in question_objects %}
-        <li>{{one.question_tex}}: Date published : {{one.publish_date}}</li>
-        {% endfor %} 
+   <p>
+       Fill in the questions that follows: <br>
 
-    </ul>
-        
+   </p>
+   <ol>
+   {% for q in questions_objects %}
+        <li>{{ q.question_text  }}:  Date published : {{ q.publish_date }}</li>
+        {% endfor %} 
+   </ol>
 </body>
 </html>
 {% endif %}
